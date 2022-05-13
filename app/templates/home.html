@@ -11,7 +11,7 @@ styles%} {{ super() }}
     <div class="col-md-4">
       <img src="../static/images/me.jpg" alt="me" id="me" />
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 things">
         <h2>10 THINGS I LOVE ABOUT SUNDAY</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
@@ -24,7 +24,8 @@ styles%} {{ super() }}
       </p>
       <br>
       <h3>Log In to view more Blogs</h3>
-      <a href="{{url_for('auth.login')}}">LogIn Here</a>
+      <button type="button" class="btn btn-outline-success"><a href="{{url_for('auth.login')}}">LogIn Here</a> </button>
+      
     </div>
     <div class="col-md-2"></div>
   </div>

@@ -1,7 +1,7 @@
 /* navbar */
 .navbar1{
     height: 80px;
-      background:  linear-gradient(180deg, rgba(22, 30, 61, 0.65) 0%, rgba(238, 238, 238, 0.65) 100%);
+    background:  linear-gradient(180deg, rgba(22, 30, 61, 0.65) 0%, rgba(238, 238, 238, 0.65) 100%);
     position: sticky;
     width: 100%;
 }
@@ -29,3 +29,24 @@ home.html */
     height: 500px;
     border-radius: 25rem;
 }
+
+.things h2{
+/* font-family: 'Gamja Flower', cursive; */
+/* font-family: 'Indie Flower', cursive; */
+/* font-family: 'Mukta', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+font-family: 'Sirin Stencil', cursive;
+}
+
+.things h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.logform{
+    margin-top: 10%;
+    background:  linear-gradient(180deg, rgba(22, 30, 61, 0.65) 0%, rgba(238, 238, 238, 0.65) 100%); ;
+    border-radius: 1rem;
+}
+
