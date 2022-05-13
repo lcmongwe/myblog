@@ -21,6 +21,30 @@
 #blog{
     padding-left: 80%;
 }
+
+
+/* footer */
+.foot{
+    
+    height: 80px;
+    background:  linear-gradient(180deg, rgba(22, 30, 61, 0.65) 0%, rgba(238, 238, 238, 0.65) 100%);
+    position: sticky;
+    width: 100%;
+    margin-top: 15%;
+
+}
+
+/* .fabs{
+    padding-top: 20px;
+} */
+.fab{
+
+    padding: 60px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 /* 
 home.html */
 
@@ -28,6 +52,12 @@ home.html */
     width: 500px;
     height: 500px;
     border-radius: 25rem;
+}
+
+#write{
+    width: 500px;
+    height: 500px;
+    border-radius: 5rem;
 }
 
 .things h2{

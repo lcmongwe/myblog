@@ -50,6 +50,24 @@
     </nav>
 
     {%block content%} {%endblock%}
+ <div class="foot">
+      <div class="class1" id="navbar">
+        <div class="items">
+          <a class="item" id=" logout" href="{{url_for('auth.logout')}}"
+            ><i class="fa-brands fa-facebook-f"></i>facebook</a
+          >
+
+          <a class="item" id=" home" href="/"><i class="fa-brands fa-twitter">Twitter</i></a>
+
+          <a class="item" id=" login" href="{{url_for('auth.login')}}"><i class="fa-brands fa-instagram-square"></i>instagram</a>
+          <a class="item" id=" signUp" href="{{url_for('auth.register')}}"
+            > <i class="fa-brands fa-whatsapp-square"></i>whatsapp</a
+          >
+
+        
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
