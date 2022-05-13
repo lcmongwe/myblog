@@ -4,27 +4,27 @@ from . import main
 
 # from ..models import  Pitch, User,Comment,Upvote,Downvote
 # from .forms import PitchForm, CommentForm, UpvoteForm
-from flask_login import login_required,current_user
-from .. import db
+# from flask_login import login_required,current_user
+# from .. import db
 from flask.views import View,MethodView
 # import markdown2
 
 
 
 
-@main.route('/user')
+@main.route('/profile')
 def profile():
     
     return render_template("profile/profile.html")
 
 
 
-@main.route('/', methods=['GET', 'POST'])
-# @login_required
+@main.route('/')
+
 def index():
     
    
-    return render_template('home.html')
+    return render_template('blogs.html')
 
 
 
