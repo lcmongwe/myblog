@@ -27,6 +27,6 @@ def index():
     form=CommentForm()
     
    
-    return render_template('blogs.html', form=form)
+    return render_template('home.html', form=form)
 
 

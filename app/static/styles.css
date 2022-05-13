@@ -17,3 +17,15 @@
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+#blog{
+    padding-left: 80%;
+}
+/* 
+home.html */
+
+#me{
+    width: 500px;
+    height: 500px;
+    border-radius: 25rem;
+}
