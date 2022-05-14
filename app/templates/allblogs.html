@@ -4,15 +4,46 @@ styles%} {{ super() }}
 <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}" />
 
 {% endblock %} 
-{% block content %}
-<div class="card" style="width: 18rem;">
+{% block content %} <div class="comtainer-fluid blogs">
+<div class="card cardy" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Blog title</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Blog subtitle</h6>
+    <h6 class="card-subtitle mb-2 text-muted">Posted By: Lucy</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Add Comment<button type="button" class="btn btn-success"></button></a>
-    <a href="#" class="card-link"> Delete<i class="fa-solid fa-trash-can"></i></a>
+    <a href="#" class="card-link"><button type="button" class="btn btn-success">Add Comment</button></a>
+    <a href="#" class="card-link"><button type="button" class="btn btn-danger">Delete<i class="fa-solid fa-trash-can"></i></button></a>
+
   </div>
 </div>
+<div class="card cardy" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Blog title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Posted By: Lucy</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link"><button type="button" class="btn btn-success">Add Comment</button></a>
+    <a href="#" class="card-link"><button type="button" class="btn btn-danger">Delete<i class="fa-solid fa-trash-can"></i></button></a>
 
+  </div>
+</div>
+<div class="card cardy" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Blog title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Posted By: Lucy</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link"><button type="button" class="btn btn-success">Add Comment</button></a>
+    <a href="#" class="card-link"><button type="button" class="btn btn-danger">Delete<i class="fa-solid fa-trash-can"></i></button></a>
+
+  </div>
+</div>
+<div class="card cardy" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Blog title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Posted By: Lucy</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link"><button type="button" class="btn btn-success">Add Comment</button></a>
+    <a href="#" class="card-link"><button type="button" class="btn btn-danger">Delete<i class="fa-solid fa-trash-can"></i></button></a>
+
+  </div>
+</div>
+</div>
 {%endblock%}
