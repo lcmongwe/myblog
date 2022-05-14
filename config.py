@@ -3,7 +3,7 @@ import os
 
 class Config:
 
- 
+    API ='http://quotes.stormconsultancy.co.uk/random.json'
     SECRET_KEY = os.environ.get('SECRET_KEY')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://lucy:4444@localhost/myblog'

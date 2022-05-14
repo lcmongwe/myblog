@@ -7,7 +7,7 @@ styles%} {{ super() }}
 
 <div class="image">
   <div class="row">
-    <div class="col-md-2"></div>
+    <div class="col-md-2">{{data}}</div>
     <div class="col-md-4">
       <img src="../static/images/me.jpg" alt="me" id="me" />
     </div>
@@ -23,7 +23,7 @@ styles%} {{ super() }}
         exercitationem deleniti?
       </p>
       <br>
-      <h3>Log In to view more Blogs</h3>
+      <h3> View More Blogs</h3>
       <button type="button" class="btn btn-outline-success" align="center"><a href="{{url_for('main.blogs')}}">View Blogs</a> </button>
       
     </div>

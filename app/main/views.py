@@ -9,15 +9,18 @@ from . import main
 # from flask_login import login_required,current_user
 from .. import db
 from flask.views import View,MethodView
+import requests,json
 # import markdown2
 
 
-@main.route('/')
+@main.route('/' ,methods=['GET'])
 
 def index():
     form=CommentForm()
+    quotes=requests.get("http://quotes.stormconsultancy.co.uk/random.json")
+    data=json.loads(quotes.content)
     
-    return render_template('home.html', form=form)
+    return render_template('home.html', form=form,data=data)
 
 
 @main.route('/profile')
