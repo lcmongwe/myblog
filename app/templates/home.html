@@ -7,7 +7,18 @@ styles%} {{ super() }}
 
 <div class="image">
   <div class="row">
-    <div class="col-md-2">{{data}}</div>
+    <div class="col-md-2"> 
+        
+    <div class="card blog" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">Quote Of Day<i class="fa-solid fa-pen-ruler"></i> </h5>
+      <h6 class="card-subtitle mb-2 text-muted">Author:{{data.author}} </h6>
+      Quote:{{data.quote}}
+      </p>
+
+    </div>
+  </div>
+    </div>
     <div class="col-md-4">
       <img src="../static/images/me.jpg" alt="me" id="me" />
     </div>
