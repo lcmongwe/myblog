@@ -80,3 +80,40 @@ font-family: 'Sirin Stencil', cursive;
     border-radius: 1rem;
 }
 
+/* allblogs.html */
+.blogs{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding: 20px;
+margin: 20px;
+align-items: center;
+justify-content: space-around;
+}
+
+.blog{
+    box-shadow: 5px 10px red;
+}
+
+.fa-pen-paintbrush{
+    color: brown;
+}
+
+.trend{
+   font-family: 'Gamja Flower', cursive; 
+   color: brown;
+   font-weight: bolder;
+   font-size: 40px;
+}
+
+.fa-pen-ruler{
+    color: green;
+    padding-left: 50%;
+}
+
+
+/* login.html */
+.login{
+  height: 100vh;
+    background:  linear-gradient(180deg, rgba(22, 30, 61, 0.65) 0%, rgba(238, 238, 238, 0.65) 100%); 
+}

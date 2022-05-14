@@ -5,5 +5,19 @@ styles%} {{ super() }}
 
 {% endblock %} 
 {% block content %}
-this is a comment
+<div class="login">
+<div class="container"> 
+  
+    <div class="row">
+      <div class= "col-md-2">
+         </div>
+      <div class="col-md-8 logform">
+      
+      {{wtf.quick_form(comment_form)}}
+      
+     </div>
+     <div clas="col-md-2"> </div>
+    </div>
+</div>
+</div>
 {%endblock%}

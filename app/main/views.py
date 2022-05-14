@@ -17,7 +17,6 @@ from flask.views import View,MethodView
 def index():
     form=CommentForm()
     
-   
     return render_template('home.html', form=form)
 
 
@@ -38,3 +37,9 @@ def blogs():
     form=CommentForm()
     
     return render_template("allblogs.html",comment_form=form)
+
+@main.route('/comment')
+def comment():
+    form=CommentForm()
+    
+    return render_template("comments.html",comment_form=form)
