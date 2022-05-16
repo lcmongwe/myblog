@@ -37,7 +37,7 @@ def write():
         title = form.title.data
         owner_id = current_user
         print(current_user._get_current_object().id)
-        new_blog = Blog(owner_id =current_user._get_current_object().id, title = title,description=description,category=category)
+        new_blog = Blog(owner_id =current_user._get_current_object().id, description=description)
         db.session.add(new_blog)
         db.session.commit()
 
@@ -46,7 +46,7 @@ def write():
     '''
     blog = Blog.query.filter_by().first()
     title = 'Home'
-    return render_template("writer/writer.html",title=title,blog=blog,blog_form=form)
+    return render_template("writer/writer.html",blog=blog,blog_form=form)
 
 @main.route('/blogs',methods = ['GET','POST'])
 def blogs():

@@ -50,13 +50,12 @@ class Blog(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     owner_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable = False)
     description = db.Column(db.String(), index = True)
-    category = db.Column(db.String(255), nullable=False)
     comments = db.relationship('Comment',backref='blogs',lazy='dynamic')
     
     
     @classmethod
     def get_blogs(cls, id):
-        blogs = Blog.query.order_by(pitch_id=id).desc().all()
+        blogs = Blog.query.order_by(blog_id=id).desc().all()
         return blogs
 
     def __repr__(self):
