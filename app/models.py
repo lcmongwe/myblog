@@ -40,4 +40,19 @@ class User(UserMixin,db.Model):
         return f'{self.username}'
 
 
+class Blog(db.Model):
+    '''
+    '''
+    __tablename__ = 'blog'
 
+    id = db.Column(db.Integer, primary_key = True)
+    owner_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable = False)
+    description = db.Column(db.String(), index = True)
+    category = db.Column(db.String(255), nullable=False)
+    comments = db.relationship('Comment',backref='blog',lazy='dynamic')
+    
+    
+    @classmethod
+    def get_blogs(cls, id):
+        blogs = Blog.query.order_by(pitch_id=id).desc().all()
+        return blogs
