@@ -4,7 +4,7 @@ My-Blog
 
 ## SCREENSHOT
 
-<!-- ![PITCHES-APP](/app/static/images/blogscreenshot.png) -->
+![MYBLOG](/app/static/images/blogscreenshot.png)
 
 ### :bulb: PROJECT DESCRIPTION
 
