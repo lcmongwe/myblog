@@ -23,6 +23,18 @@
     padding-left: 80%;
 }
 
+.blogs ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.blogs li{
+    padding: 20px;
+}
+
 
 /* footer */
 .foot{
