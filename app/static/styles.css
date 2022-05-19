@@ -23,6 +23,10 @@
     padding-left: 80%;
 }
 
+#logout{
+    padding-left: 10%;
+}
+
 .blogs ul{
     display: flex;
     flex-direction: row;
