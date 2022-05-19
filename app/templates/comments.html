@@ -7,6 +7,41 @@ styles%} {{ super() }}
 {% block content %}
 <div class="login">
 <div class="container"> 
+
+
+  <div class="comments">
+  <div class="row">
+    <div class="card cardy">
+      <div class="card-body text-center">
+        <h4><a>{{blog.title}}</a></h4>
+        <h5 class="card-text text-center">{{blog.description}}.</h5>
+      </div>
+    </div>
+
+    <div class="container comm">
+      <div class="row ">
+        <div class="jumbotron tron">{{wtf.quick_form(comment_form)}}</div>
+      </div>
+    </div>
+
+    <hr />
+    <hr />
+    <div class="container">
+      <div class="col-md-12">
+        <h4
+          style="
+            color:white;
+            text-align: center;
+            text-underline-position: below;
+          "
+        >
+          Comments
+        </h4>
+        {{ macro.displayComment(comment) }}
+      </div>
+    </div>
+  </div>
+</div>
   
     <div class="row">
       <div class= "col-md-2">
