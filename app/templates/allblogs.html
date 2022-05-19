@@ -17,7 +17,7 @@ styles%} {{ super() }}
       <p class="card-text">{{blog.description}}</p>
         
       </p>
-      <a href="#" class="card-link"
+      <a href="{{url_for('main.comment',blog_id=blog.id)}}" class="btn btn-primarycard-link"
         ><button type="button" class="btn btn-success">Add Comment</button></a
       >
       <a href="#" class="card-link"
