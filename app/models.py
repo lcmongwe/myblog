@@ -74,3 +74,14 @@ class Comment(db.Model):
     
     def __repr__(self):
         return f"Comment : id: {self.id} comment: {self.description}"
+
+
+class Likes(db.Model):
+    __tablename__='likes'
+    
+    id = db.Column(db.Integer,primary_key=True)
+    description = db.Column(db.Text)
+
+    
+    def __repr__(self):
+        return f"Likes : id: {self.id} likes: {self.description}"
