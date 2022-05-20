@@ -1,5 +1,5 @@
 export SECRET_KEY=myblog
-export SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://lucy:4444@localhost/myblog'
+export DATABASE_URL='postgresql+psycopg2://lucy:4444@localhost/myblog'
 # python3 manage.py db init
 # python3 manage.py db migrate -m "initia Migration"
 # python3 manage.py db upgrade

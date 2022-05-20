@@ -69,7 +69,7 @@ def blogs():
         db.session.add(new_blog)
         db.session.commit()
         
-        return redirect(url_for('main.index'))
+        return redirect(url_for('main.blogs'))
     return render_template("allblogs.html",comment_form=form,blogs=blogs)
 
 
@@ -86,7 +86,7 @@ def comment(blog_id):
         db.session.commit()
 
 
-        return redirect(url_for('main.comment', ))
+        # return redirect(url_for('main.comment',blog_id=blog_id ))
 
     all_comments = Comment.query.filter_by(blog_id = blog_id).all()
     return render_template('comments.html', comment_form = form, comment = all_comments , blog=blog)
