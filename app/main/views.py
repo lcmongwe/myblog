@@ -90,3 +90,15 @@ def comment(blog_id):
 
     all_comments = Comment.query.filter_by(blog_id = blog_id).all()
     return render_template('comments.html', comment_form = form, comment = all_comments , blog=blog)
+
+
+@main.route('/blog/<int:blog_id>/delete', methods=['GET','POST'])
+@login_required
+def delete_blog(blog_id):
+  blog = Blog.query.get_or_404(blog_id)
+  if blog.user != current_user:
+    abort(403)
+  db.session.delete(blog)
+  db.session.commit()
+  flash(f'Your post `Title: {blog.title}` has been Deleted!', 'info')
+  return redirect(url_for('main.index'))

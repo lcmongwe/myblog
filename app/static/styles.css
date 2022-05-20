@@ -130,6 +130,13 @@ justify-content: space-around;
     padding-left: 50%;
 }
 
+.posted{
+    width: 60%;
+}
+
+.blogss{
+    width: 500px;
+}
 
 /* login.html */
 .login{

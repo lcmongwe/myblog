@@ -31,33 +31,29 @@
     <nav class="navbar1">
       <div class="class1" id="navbar">
         <div class="items">
-           <a class="item" id=" home" href="/">Home</a>
+          {% if current_user.is_anonymous %}
+          <a class="item" id=" home" href="/">Home</a>
 
-         
+          <a class="item" id=" blog" href="{{url_for('main.blogs')}}"> Blogs</a>
+          <a class="item" id=" login" href="{{url_for('auth.login')}}">Login</a>
           <!-- <a class="item" id=" signUp" href="{{url_for('auth.register')}}"
             >sign Up</a
-          > -->
-
+          > -->{%else%}
+          <a class="item" id=" blog" href="{{url_for('main.blogs')}}"> Blogs</a>
           <a class="item" id=" blog" href="{{url_for('main.write')}}"
             >Write Blog</a
           >
-        
-    
-          <!-- <a class="item" id=" blog" href="{{url_for('main.blogs')}}"> Blogs</a> -->
-         <a class="item" id=" login" href="{{url_for('auth.login')}}"
-            >Login</a
-          >
 
-            <a class="item" id=" logout" href="{{url_for('auth.logout')}}"
+          <a class="item" id=" logout" href="{{url_for('auth.logout')}}"
             >Log Out</a
-          > 
-      
+          >
+          {%endif%}
         </div>
       </div>
     </nav>
 
     {%block content%} {%endblock%}
-   
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
